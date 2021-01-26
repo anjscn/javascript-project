@@ -1,0 +1,43 @@
+body {
+    background-color: pink;
+}
+
+.background {
+    background-image: url('img/background.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    animation: slideright linear;
+    -webkit-animation: slideright linear;
+}
+
+h1, .backgroundTitle {
+    text-align: center;
+}
+
+.dino {
+    background-image: url('img/dino.png');
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+.cactus {
+    background-image: url('img/cactus.png');
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 50000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
